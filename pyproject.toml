@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "steganography-example"
+version = "0.1.0"
+description = ""
+authors = ["MysMon <mysmon.dev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pillow = "^11.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+image-embed = "steganography_example.image.embed:main"
+image-extract = "steganography_example.image.extract:main"
